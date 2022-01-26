@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/Home.module.css';
 
-const Home: NextPage = function Home() {
+const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
