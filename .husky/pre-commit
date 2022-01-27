@@ -6,7 +6,7 @@ echo '🏗️👷 커밋하기 전에 프로젝트 스타일 지정, 테스트 �
 # Check Prettier standards
 npm run check-format ||
 (
-    echo '🤢 코드 포맷이 규칙을 위반하였어요. 🤮
+    echo '🤢🤮 코드 포맷이 규칙을 위반하였어요. 🤮🤢
             Prettier Check Failed. npm run format 스크립트 실행 후 커밋을 다시 시도해주세요.';
     false;
 )
@@ -14,7 +14,7 @@ npm run check-format ||
 # Check ESLint Standards
 npm run check-lint ||
 (
-        echo '😤 ESLint 규칙을 위반하였어요. 😤 
+        echo '🚫⛔ ESLint 규칙을 위반하였어요. 🚫⛔
                 ESLint Check Failed: 위에 나열된 필요한 사항을 변경하고 변경 사항을 추가한 다음 다시 커밋하십시오.'
         false; 
 )
@@ -22,21 +22,21 @@ npm run check-lint ||
 # Check tsconfig standards
 npm run check-types ||
 (
-    echo '❌ 타입스크립트 컴파일 실패. ❌
+    echo '❌❌ 타입스크립트 컴파일 실패. ❌❌
             위에서 요구한 대로 변경하여 주세요.'
     false;
 )
 
 # If everything passes... Now we can commit
-echo '🤡 타입, 코드 포맷, 코드 규칙이 모두 검증되었습니다. 빌드가 성공한다면 커밋이 완료됩니다. 🤡'
+echo '🟠 타입, 코드 포맷, 코드 규칙이 모두 검증되었습니다. 빌드가 성공한다면 커밋이 완료됩니다. 🟠'
 
 npm run build ||
 (
-    echo '❌👷🔨 빌드에 실패했습니다. ❌👷🔨
+    echo '❌👷 빌드에 실패했습니다. ❌🔨
             Next build failed: 위의 오류를 보고 이유를 확인하세요.  
     '
     false;
 )
 
 # If everything passes... Now we can commit
-echo '✅✅✅ 정상적으로 커밋이 완료되었습니다!. ✅✅✅'
+echo '❕❕ 모든 작업이 끝났어요! 커밋 메세지가 컨벤션에 적합하다면 커밋이 완료됩니다. ❕❕'
