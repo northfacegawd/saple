@@ -28,7 +28,7 @@ npm run check-types ||
 )
 
 # If everything passes... Now we can commit
-echo '🟠 타입, 코드 포맷, 코드 규칙이 모두 검증되었습니다. 빌드가 성공한다면 커밋이 완료됩니다. 🟠'
+echo '🟠 타입, 코드 포맷, 코드 규칙이 모두 검증되었습니다. next build를 실행합니다. 🟠'
 
 npm run build ||
 (
