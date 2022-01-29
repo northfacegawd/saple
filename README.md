@@ -1,20 +1,4 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -46,30 +30,30 @@
   <summary>목차</summary>
   <ol>
     <li>
-      <a href="#about-the-project">프로젝트에 관하여</a>
+      <a href="#saple">SAPLE이란</a>
       <ul>
-        <li><a href="#built-with">사용한 기술 스택</a></li>
+        <li><a href="#기술스택">사용한 기술 스택</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#시작하기">시작하기</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#전제-조건">전제 조건</a></li>
+        <li><a href="#설치">설치</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#실행방법">실행방법</a></li>
+    <li><a href="#로드맵">로드맵</a></li>
+    <li><a href="#기여하기">기여하기</a></li>
+    <li><a href="#라이선스">라이선스</a></li>
+    <li><a href="#연락처">연락처</a></li>
+    <li><a href="#감사의-말">감사의 말</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 
-## SAPLE.
+## SAPLE
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -85,113 +69,113 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 Use the `BLANK_README.md` to get started.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
-### Built With
+### 기술스택
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+- [Next.js](https://nextjs.org/)
+- [Redux](https://redux.js.org/)
+- [Tailwind Css](https://tailwindcss.com/)
+- [Post Css](https://postcss.org/)
+- [GraphQL with Apollo](https://www.apollographql.com/)
+- [Prisma](https://www.prisma.io/)
+- [Redis](https://redis.io/)
+- 메인 DB는 아직 미정
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- GETTING STARTED -->
 
-## Getting Started
+## 시작하기
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+프로젝트를 다운로드, 실행하기에 앞서 밑 항목들을 참고하여 주세요.
 
-### Prerequisites
+### 전제 조건
 
-This is an example of how to list things you need to use the software and how to install them.
+npm, nodejs가 설치되어 있어야 합니다.
+
+- nodejs
+  `다운로드 방법은 os마다 다르므로 해당 링크 참고` [Node.js Download](https://nodejs.org/en/download/)
 
 - npm
   ```sh
   npm install npm@latest -g
   ```
 
-### Installation
+### 설치
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. git repository를 클론
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/northfacegawd/saple
    ```
-3. Install NPM packages
+2. NPM packages 설치
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. husky 다운로드
+   ```sh
+   npm run prepare
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
-## Usage
+## 실행방법
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+- `npm run dev` 명령어로 로컬 개발서버 실행 (3000번 포트가 기본으로 실행됨.)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```sh
+  npm run dev
+```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- ROADMAP -->
 
-## Roadmap
+## 로드맵
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
+- [x] 맨 위로 이동하는 링크 추가
+- [ ] 메인 이미지 SAPLE 홈페이지 사진으로 변경
+- [ ] 다국어 지원
+  - [ ] English
+  - [ ] Japanese
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+제안된 기능(및 알려진 문제)의 전체 목록은 [open issue](https://github.com/northfacegawd/saple/issues)를 참조해주세요.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-## Contributing
+## 기여하기
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+saple에 기여해주신 모든분들께 **너무 감사합니다.**
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+해당 프로젝트를 개선할 수 있는 제안이 있으시다면, 프로젝트를 fork하여 풀 리퀘스트를 생성해주세요.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+프로젝트에 별점 남겨주신다면 감사하겠습니다!
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+1. 프로젝트 fork
+2. feat로 시작하는 브랜치 생성 (`git checkout -b feat/some-branch`)
+3. 변경사항 커밋하기 (`git commit -m 'Add some feat branch'`)
+4. 브랜치 푸시 (`git push origin feat/some-branch`)
+5. 풀 리퀘스트 생성하기
+
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- LICENSE -->
 
-## License
+## 라이선스
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- CONTACT -->
 
-## Contact
+## 연락처
 
 <b>이용준</b>
 
@@ -200,27 +184,30 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 프로젝트 링크: [https://github.com/northfacegawd/saple](https://github.com/northfacegawd/saple)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
-## 감사인사
+## 감사의 말
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+SAPLE프로젝트를 찾아주신 모든 분들에게 감사합니다.
 
-- [Choose an Open Source License](https://choosealicense.com)
+해당 프로젝트를 진행 하면서 도움이 되었던 블로그 또는 문서들을 정리해두었습니다.
+
+<b>추가 예정!</b>
+
+<!-- - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 - [Malven's Grid Cheatsheet](https://grid.malven.co/)
 - [Img Shields](https://shields.io)
 - [GitHub Pages](https://pages.github.com)
 - [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
+- [React Icons](https://react-icons.github.io/react-icons/search) -->
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">맨 위로</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/northfacegawd/saple.svg?style=for-the-badge
 [contributors-url]: https://github.com/northfacegawd/saple/graphs/contributors
